@@ -25,7 +25,7 @@ body.light-mode {
   }
 }
 
-.nav-mobile {
+nav-mobile {
   background: #000000;
   color: #FFF;
   padding: 0;
@@ -35,38 +35,38 @@ body.light-mode {
   list-style-type: none;
   box-shadow: 0 5px 5px -5px #333;
 }
-.nav-mobile:after {
+nav-mobile:after {
   content: "";
   display: table;
   clear: both;
 }
-.nav-mobile svg {
+nav-mobile svg {
   height: 45px;
   width: 65px;
   padding: 9px;
 }
-.nav-mobile svg path {
+nav-mobile svg path {
   fill: #fff;
 }
-.nav-mobile svg.icon-close {
+nav-mobile svg.icon-close {
   display: none;
   padding: 15px;
 }
-.nav-mobile li {
+nav-mobile li {
   width: 100%;
   height: 45px;
   line-height: 46px;
   text-align: center;
   float: left;
 }
-.nav-mobile li a {
+nav-mobile li a {
   display: block;
   color: #333;
   width: 100%;
   height: 100%;
   text-decoration: none;
 }
-.nav-mobile .menu-button {
+nav-mobile .menu-button {
   position: absolute;
   top: 0;
   left: 0;
@@ -76,7 +76,7 @@ body.light-mode {
   cursor: pointer;
   display: block;
 }
-.nav-mobile .menu-button:after {
+nav-mobile .menu-button:after {
   opacity: 0;
   top: 45px;
   content: "";
@@ -90,31 +90,31 @@ body.light-mode {
   transition: opacity 0.2s cubic-bezier(0, 0, 0.3, 1);
   transition-delay: 0.1s;
 }
-.nav-mobile #menu-toggle {
+nav-mobile #menu-toggle {
   display: none;
 }
-.nav-mobile #menu-toggle.active ~ .menu-button .icon-close, .nav-mobile #menu-toggle:checked ~ .menu-button .icon-close {
+nav-mobile #menu-toggle.active ~ .menu-button .icon-close, .nav-mobile #menu-toggle:checked ~ .menu-button .icon-close {
   display: block;
 }
-.nav-mobile #menu-toggle.active ~ .menu-button .icon-open, .nav-mobile #menu-toggle:checked ~ .menu-button .icon-open {
+nav-mobile #menu-toggle.active ~ .menu-button .icon-open, .nav-mobile #menu-toggle:checked ~ .menu-button .icon-open {
   display: none;
 }
-.nav-mobile #menu-toggle.active ~ .menu-button:after, .nav-mobile #menu-toggle:checked ~ .menu-button:after {
+nav-mobile #menu-toggle.active ~ .menu-button:after, .nav-mobile #menu-toggle:checked ~ .menu-button:after {
   opacity: 1;
   pointer-events: auto;
   transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
 }
-.nav-mobile #menu-toggle.active ~ .menu-sidebar, .nav-mobile #menu-toggle:checked ~ .menu-sidebar {
+nav-mobile #menu-toggle.active ~ .menu-sidebar, .nav-mobile #menu-toggle:checked ~ .menu-sidebar {
   transform: translateX(0);
   transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
 }
-.nav-mobile .menu-container {
+nav-mobile .menu-container {
   width: 65px;
   float: left;
   cursor: pointer;
   position: absolute;
 }
-.nav-mobile .menu-container .menu-sidebar {
+nav-mobile .menu-container .menu-sidebar {
   box-shadow: 5px 0 5px -5px #333;
   display: block;
   overflow-y: scroll;
@@ -131,7 +131,7 @@ body.light-mode {
   padding: 0;
   max-width: 400px;
 }
-.nav-mobile .menu-container .menu-sidebar .arrow {
+nav-mobile .menu-container .menu-sidebar .arrow {
   position: absolute;
   line-height: 50px;
   font-size: 32px;
@@ -139,13 +139,13 @@ body.light-mode {
   top: 0;
   z-index: 0;
 }
-.nav-mobile .menu-container .menu-sidebar .arrow.left {
+nav-mobile .menu-container .menu-sidebar .arrow.left {
   left: 25px;
 }
-.nav-mobile .menu-container .menu-sidebar .arrow.right {
+nav-mobile .menu-container .menu-sidebar .arrow.right {
   right: 25px;
 }
-.nav-mobile .menu-container .menu-sidebar li {
+nav-mobile .menu-container .menu-sidebar li {
   height: 55px;
   line-height: 55px;
   font-size: 16px;
@@ -154,10 +154,10 @@ body.light-mode {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-left: 20px;
 }
-.nav-mobile .menu-container .menu-sidebar li:hover {
+nav-mobile .menu-container .menu-sidebar li:hover {
   background: #eee;
 }
-.nav-mobile .menu-container .menu-sidebar li .menu-sub {
+nav-mobile .menu-container .menu-sidebar li .menu-sub {
   position: fixed;
   top: 0;
   right: 0;
@@ -174,22 +174,22 @@ body.light-mode {
   z-index: 2;
   max-width: 400px;
 }
-.nav-mobile .menu-container .menu-sidebar li .menu-sub li {
+nav-mobile .menu-container .menu-sidebar li .menu-sub li {
   overflow: hidden;
 }
-.nav-mobile .menu-container .menu-sidebar li .menu-sub .menu-sub-title {
+nav-mobile .menu-container .menu-sidebar li .menu-sub .menu-sub-title {
   padding-left: 50px;
 }
-.nav-mobile .menu-container .menu-sidebar li .submenu-label {
+nav-mobile .menu-container .menu-sidebar li .submenu-label {
   cursor: pointer;
   width: 100%;
   height: 100%;
   display: block;
 }
-.nav-mobile .menu-container .menu-sidebar li .submenu-toggle {
+nav-mobile .menu-container .menu-sidebar li .submenu-toggle {
   display: none;
 }
-.nav-mobile .menu-container .menu-sidebar li .submenu-toggle.active ~ .menu-sub, .nav-mobile .menu-container .menu-sidebar li .submenu-toggle:checked ~ .menu-sub {
+nav-mobile .menu-container .menu-sidebar li .submenu-toggle.active ~ .menu-sub, .nav-mobile .menu-container .menu-sidebar li .submenu-toggle:checked ~ .menu-sub {
   width: 65vw;
   visibility: visible;
   z-index: 1;
@@ -197,7 +197,7 @@ body.light-mode {
 }
 
  
- .logo {
+ logo {
     float: left;
     width: 21%;
     height: 75px;
@@ -272,7 +272,7 @@ body.light-mode {
 .aragon {background-image: url("https://raw.githubusercontent.com/Sherpa47/Imagenes/main/Emisoras%20radio/aragon.png");}
 
 
-.boton_compartir {
+boton_compartir {
   width: 40px;
   height: 40px;
   background-image: url("https://i.ibb.co/XzQV3rD/icono-compartir.jpg");
@@ -338,7 +338,7 @@ footer {
             padding: 0px 0px 2px 0px;
         }
   
-.img {
+img {
     float: center;
     width: 30px;
     height: 30px;
