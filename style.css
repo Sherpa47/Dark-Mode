@@ -114,7 +114,7 @@ html.transition *:after {
 }
 
 .nav-mobile {
-  background: #000000;
+  background: #ff0000;
   color: #FFF;
   padding: 0;
   margin: 0;
@@ -289,7 +289,7 @@ html.transition *:after {
     float: left;
     width: 10%;
     height: 10vh;
-    background-color: #000000; /* Black */
+    background-color: #0000ff; /* Black */
     background-size: 95% 90%;
     background-repeat: no-repeat;
     background-position: center;
@@ -430,7 +430,7 @@ footer {
     float: center;
     width: 30px;
     height: 30px;
-    background-color: #000000; /* Black */
+    background-color: #000fff; /* Black */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
