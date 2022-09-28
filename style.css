@@ -287,7 +287,7 @@ html.transition *:after {
  
  .logo {
     float: left;
-    width: 10%;
+    width: 50%;
     height: 10vh;
     background-color: #0000ff; /* Black */
     background-size: 95% 90%;
