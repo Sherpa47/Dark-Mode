@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap");
 html {
   width: 100%;
-  height: 100vh;
+  height: 300vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,14 +82,6 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
-
-.emisoas {
-  width: 100%;
-  position: absolute;
-  background: var(--lightBg);
-  border-top: 1px solid var(--lightBtn);
-}
-
 /* ignore, but thank u */
 .thanku {
   width: 100%;
@@ -114,190 +106,11 @@ html.transition *:after {
   margin-right: 25px;
 }
 
-
-
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-.nav-mobile {
-  background: #ff0000;
-  color: #FFF;
-  padding: 0;
-  margin: 0;
-  cursor: auto;
-  font-size: 22px;
-  list-style-type: none;
-  box-shadow: 0 5px 5px -5px #333;
-}
-.nav-mobile:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.nav-mobile svg {
-  height: 45px;
-  width: 65px;
-  padding: 9px;
-}
-.nav-mobile svg path {
-  fill: #fff;
-}
-.nav-mobile svg.icon-close {
-  display: none;
-  padding: 15px;
-}
-.nav-mobile li {
-  width: 100%;
-  height: 45px;
-  line-height: 46px;
-  text-align: center;
-  float: left;
-}
-.nav-mobile li a {
-  display: block;
-  color: #333;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
-.nav-mobile .menu-button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  cursor: pointer;
-  display: block;
-}
-.nav-mobile .menu-button:after {
-  opacity: 0;
-  top: 45px;
-  content: "";
-  width: 100vw;
-  display: block;
-  position: fixed;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  content: "";
-  pointer-events: none;
-  transition: opacity 0.2s cubic-bezier(0, 0, 0.3, 1);
-  transition-delay: 0.1s;
-}
-.nav-mobile #menu-toggle {
-  display: none;
-}
-.nav-mobile #menu-toggle.active ~ .menu-button .icon-close, .nav-mobile #menu-toggle:checked ~ .menu-button .icon-close {
-  display: block;
-}
-.nav-mobile #menu-toggle.active ~ .menu-button .icon-open, .nav-mobile #menu-toggle:checked ~ .menu-button .icon-open {
-  display: none;
-}
-.nav-mobile #menu-toggle.active ~ .menu-button:after, .nav-mobile #menu-toggle:checked ~ .menu-button:after {
-  opacity: 1;
-  pointer-events: auto;
-  transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
-}
-.nav-mobile #menu-toggle.active ~ .menu-sidebar, .nav-mobile #menu-toggle:checked ~ .menu-sidebar {
-  transform: translateX(0);
-  transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
-}
-.nav-mobile .menu-container {
-  width: 65px;
-  float: left;
-  cursor: pointer;
-  position: absolute;
-}
-.nav-mobile .menu-container .menu-sidebar {
-  box-shadow: 5px 0 5px -5px #333;
-  display: block;
-  overflow-y: scroll;
-  width: 65vw;
-  bottom: 0;
-  background: white;
-  color: #333;
-  position: fixed;
-  transform: translateX(-405px);
-  transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
-  top: 45px;
-  z-index: 2;
-  list-style-type: none;
-  padding: 0;
-  max-width: 400px;
-}
-.nav-mobile .menu-container .menu-sidebar .arrow {
-  position: absolute;
-  line-height: 50px;
-  font-size: 32px;
-  color: #555;
-  top: 0;
-  z-index: 0;
-}
-.nav-mobile .menu-container .menu-sidebar .arrow.left {
-  left: 25px;
-}
-.nav-mobile .menu-container .menu-sidebar .arrow.right {
-  right: 25px;
-}
-.nav-mobile .menu-container .menu-sidebar li {
-  height: 55px;
-  line-height: 55px;
-  font-size: 16px;
-  text-align: left;
-  position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-left: 20px;
-}
-.nav-mobile .menu-container .menu-sidebar li:hover {
-  background: #eee;
-}
-.nav-mobile .menu-container .menu-sidebar li .menu-sub {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 0;
-  overflow: hidden;
-  background: white;
-  visibility: hidden;
-  transition: all 0.3s cubic-bezier(0, 0, 0.3, 1);
-  border-left: 1px solid #ccc;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  z-index: 2;
-  max-width: 400px;
-}
-.nav-mobile .menu-container .menu-sidebar li .menu-sub li {
-  overflow: hidden;
-}
-.nav-mobile .menu-container .menu-sidebar li .menu-sub .menu-sub-title {
-  padding-left: 50px;
-}
-.nav-mobile .menu-container .menu-sidebar li .submenu-label {
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.nav-mobile .menu-container .menu-sidebar li .submenu-toggle {
-  display: none;
-}
-.nav-mobile .menu-container .menu-sidebar li .submenu-toggle.active ~ .menu-sub, .nav-mobile .menu-container .menu-sidebar li .submenu-toggle:checked ~ .menu-sub {
-  width: 65vw;
-  visibility: visible;
-  z-index: 1;
-  transition: width 0.35s cubic-bezier(0, 0, 0.3, 1);
-}
-
- 
  .logo {
     float: left;
-    width: 40%;
-    height: 10vh;
-    background-color: #0000ff; /* Black */
+    width: 21%;
+    height: 75px;
+    background-color: #000000; /* Black */
     background-size: 95% 90%;
     background-repeat: no-repeat;
     background-position: center;
@@ -367,93 +180,12 @@ html.transition *:after {
 .punks {background-image: url("https://raw.githubusercontent.com/Sherpa47/Imagenes/main/Emisoras%20radio/12punks.png");}
 .aragon {background-image: url("https://raw.githubusercontent.com/Sherpa47/Imagenes/main/Emisoras%20radio/aragon.png");}
 
-
-.boton_compartir {
-  width: 40px;
-  height: 40px;
-  background-image: url("https://i.ibb.co/XzQV3rD/icono-compartir.jpg");
-  background-color: #00000000; /* Transparente */
-  background-size: 120% 120%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 4px solid grey;
-  border-radius: 15px;
-  color: #00000000;
-  padding: 0;
-  display:block;
-  margin-top: 2%;
-  margin-left: 85%;
-  position:absolute;
-  margin-right: 0;
-  cursor: pointer;}
-
-
-hr.barra2 {
-  position: center;
+.emisoras {
   width: 100%;
-  border: 1px solid grey;
-  border-radius: 0px;
-  margin-top: 0px;
-
-  
+  position: absolute;
+  left: 0px;
+  bottom: -305vh;
+  background: var(--lightBg);
+  border-top: 1px solid var(--lightBtn);
 }
 
-hr.barra1 {
-  margin-top: -5px;
-  position: center;
-  width: 100%;
-  border: 2px solid black;
-  border-radius: 0px;
-}
-
-footer {
-            position: relative;
-            /* Altura total del footer en px con valor negativo */
-            margin-top: -50px;
-            /* Altura del footer en px. Se han restado los 5px del margen
-               superior mas los 5px del margen inferior
-            */
-            height: 40px;
-            padding: 20px 0px;
-            clear: both;
-            background: #000000;
-            text-align: center;
-            color: grey;
-            font-size: 0.675em; /* 14px/16=0.875em */
-        }
- 
-        /* Esta clase define la anchura del contenido y la posicion centrada 
-           El contenido queda centrado y limitado, pero la cabecera y el pie
-           llegan hasta los limites del navegador.
-        */
-        .define {
-            width: 100%;
-            margin:0 auto;
-            background: #000000;
-            margin-top: -10px;
-            padding: 0px 0px 2px 0px;
-        }
-  
-.img {
-    float: center;
-    width: 30px;
-    height: 30px;
-    background-color: #000fff; /* Black */
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-   box-shadow: inset 0 0 0 1px black;
-    color: #ff000000;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;}
-
-.pie {background-image: url("https://i.ibb.co/XCBbcQR/508250.png");}
