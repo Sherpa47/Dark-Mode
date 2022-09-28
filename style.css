@@ -85,6 +85,7 @@ html.transition *:after {
 
 .emisoas {
   width: 100%;
+  position: absolute;
   background: var(--lightBg);
   border-top: 1px solid var(--lightBtn);
 }
