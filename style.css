@@ -107,12 +107,7 @@ html.transition *:after {
 }
 
 
-body, html {
-  margin: 0;
-  font-family: arial;
-  height: 100vh;
-  background: #000000;
-}
+
 
 *, *:before, *:after {
   box-sizing: border-box;
